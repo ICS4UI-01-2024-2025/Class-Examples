@@ -22,11 +22,15 @@ public class DeckOfCards {
 
     }
 
-    public Card drawCard(){
+    public Card drawCard(boolean faceUp){
         // take the card that is on top
         Card c = this.cards[this.cardsLeft - 1];
         // decrease the card count
         this.cardsLeft--;
+        // if it should be face up
+        if(faceUp){
+            c.flip();
+        }
         // send the card over
         return c;
     }
