@@ -90,10 +90,4 @@ public class MainScreen extends JFrame{
         this.picture.setImage(image);
     }
 
-
-    
-    public static void main(String[] args) {
-        MainScreen test = new MainScreen();
-        test.setDescription("Hello World");
-    }
 }
